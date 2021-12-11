@@ -15,7 +15,7 @@ app.engine('html', require('ejs').renderFile); //Renderizar los archivos html co
 //Routes
 app.use(require(path.join(__dirname,'./routes/index.js')));//Se importan las rutas desde /src/routes/index.js
 //console.log(path.join(__dirname+''));
-//Static files (Archivos fuente para frontend)
+//Static files (Archivos fuente para frontend )
 
 app.use(express.static(path.join(__dirname, 'public')))
 

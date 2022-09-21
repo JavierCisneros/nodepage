@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+        <!-- Incluye el partial de recursos -->
+    <%- include('partials/head.html') %>  
+</head>
+
+<body>
+    <!-- Incluye el partial de la navegacion -->
+   <%- include('partials/navigation.html') %>  
+   <div class="container">
+       <header class="row">
+           <div class="col-lg-12 text-center" id="logo">
+               <img src="img/logo-F1.png" alt="F1 Logo" width="600" height="400" class=" animate__animated animate__heartBeat">
+           </div>
+       </header>
+   </div>
+   <!--Section one-->
+   <div class="container-fluid" id="about">
+       <div class="row bg-dark text-white p-5 text-center">
+           <div class="col-sm-6">
+                <i class="fab fa-youtube fa-10x"></i>
+           </div>
+           <div class="col-sm-6">
+               <h3>The most exciting sport in the world</h3>
+               <p>
+                This website is unofficial and is not associated in any way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trade marks of Formula One Licensing B.V.
+               </p>
+           </div>
+       </div>
+   </div>
+   <!--FOOTER-->
+   <%- include('partials/footer.html') %>  
+   <style>
+       /*Aqui se agregan el codigo css
+       /* body{  
+        font-family: 'Oswald', sans-serif;
+       }*/
+       #logo{
+       width: 75%;
+       max-width: 960px;
+       margin: 0 auto;
+       }
+       img {
+       width: 100%;
+       height: auto;
+       }
+   </style>
+    <script>
+        //alerta
+        //alert('Se eesta ejecutando html')
+    </script>
+</body>
+
+</html>
